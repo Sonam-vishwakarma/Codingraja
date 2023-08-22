@@ -1,0 +1,117 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg,#a52fd3,#2f0986);
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #47b3d1; */
+}
+.container{
+    width: 700px;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color: #47b3d1;
+    padding: 2%;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.container h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+.content{
+    margin: 35px 0;
+}
+.quote-area{
+    display: flex;
+    justify-content: center;
+}
+.quote-area i{
+    font-size: 17px;
+}
+.quote-area i:first-child{
+    display: flex;
+    margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+    display: flex;
+    margin:  0 0 3px 10px;
+}
+.quote{
+    text-align: center;
+    font-size: 23px;
+    word-break: break-all;
+}
+.author{
+    font-size: 18px;
+    font-style: italic;
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.author span:first-child{
+    margin: -2px 5px 0 0;
+    font-family: monospace;
+
+}
+.buttons{
+    border-top: 1px solid gray;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.feature ul{
+    display: flex;
+}
+.feature ul li{
+    cursor: pointer;
+    color: #031149;
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    border: 2px solid #031149;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+.feature ul li:hover{
+    color: #47b3d1;
+    background: #031149;
+
+}
+.feature button{
+    border: none;
+    outline: none;
+    padding: 13px 22px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #031149;
+}
+.feature button:hover{
+    color: #031149;
+    background: #8a96c9;
+}
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
