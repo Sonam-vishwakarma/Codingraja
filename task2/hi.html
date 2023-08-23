@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Music Player</title>
+</head>
+<body style=" text-align: center;height: 90vh;padding: 8%;margin: 0; backdrop-filter: blur(20px);" background="album.png">
+    <div class="background"></div>
+  <div class="music-player">
+    <div class="player-info">
+        <img class="album-cover" src="sanam.png" alt="Album Cover" style="width: 15%;height: auto;">
+        <div class="song-details">
+            <h2 class="song-title" id="songTitle">Song Title</h2>
+          <p class="artist">Sanam</p>
+        </div>
+    <audio id="audio" controls>
+      <source src="music.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="controls">
+        <button id="previous">Previous</button>
+        <button id="playPause">Play</button>
+        <button id="next">Next</button>
+        <button id="skip">Skip 10s</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
